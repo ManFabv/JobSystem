@@ -1,69 +1,382 @@
-# Prerequisites
-*.d
+# ============================================================
+# General
+# ============================================================
 
-# Compiled Object files
-*.slo
-*.lo
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Temporary / backup files
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+*~
+*.log
+
+# IDE / editor temporary files
+*.user
+*.userosscache
+*.suo
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+
+
+# ============================================================
+# Compiled / Object files
+# ============================================================
+
 *.o
 *.obj
+*.lo
+*.slo
 
-# Precompiled Headers
+# Dependency files
+*.d
+
+# Precompiled headers
 *.gch
 *.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
 
 # Fortran module files
 *.mod
 *.smod
 
-# Compiled Static libraries
-*.lai
-*.la
+
+# ============================================================
+# Libraries
+# ============================================================
+
+# Shared libraries
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Static libraries
 *.a
+*.la
+*.lai
 *.lib
 
-# Executables
+# Import libraries
+*.exp
+
+
+# ============================================================
+# Executables / Binaries
+# ============================================================
+
 *.exe
 *.out
 *.app
+*.bin
+*.com
 
+
+# ============================================================
+# Debug / Profiling
+# ============================================================
+
+*.ilk
+*.pdb
+*.dwo
+*.dSYM/
+
+# Sanitizer / profiling output
+*.prof
+*.gcda
+*.gcno
+*.gcov
+
+
+# ============================================================
 # Build directories
+# ============================================================
+
 build/
 Build/
 build-*/
+out/
+Out/
+bin/
+Bin/
+obj/
+Obj/
 
-# CMake generated files
+# Common C/C++ build directories
+Debug/
+Release/
+debug/
+release/
+x64/
+x86/
+ARM/
+ARM64/
+
+# Visual Studio CMake output
+CMakeBuild/
+
+
+# ============================================================
+# CMake
+# ============================================================
+
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
 install_manifest.txt
 compile_commands.json
+CTestTestfile.cmake
+Makefile
+Makefile.*
+cmake-build-*/
 
-# Temporary files
-*.tmp
-*.log
-*.bak
-*.swp
 
+# ============================================================
+# Xcode
+# ============================================================
+
+# Xcode user-specific data
+xcuserdata/
+*.xcuserstate
+
+# Xcode build products
+DerivedData/
+build/
+
+# Xcode archives
+*.xcarchive
+
+# Xcode generated files
+*.ipa
+*.dSYM.zip
+
+# Xcode project user settings
+*.xccheckout
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Xcode workspace user data
+*.xcworkspace/xcuserdata/
+
+# Xcode generated playground data
+timeline.xctimeline
+playground.xcworkspace
+
+# Xcode indexing
+Index.noindex/
+
+# Xcode device support / generated data
+*.xcresult
+
+
+# ============================================================
+# Visual Studio
+# ============================================================
+
+# Visual Studio cache
+.vs/
+
+# Visual Studio generated files
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio Code Analysis
+*.lastcodeanalysissucceeded
+*.lastcodeanalysisfailed
+
+# Visual Studio test results
+TestResults/
+*.trx
+
+# MSTest / VSTest
+*.testlog
+*.testlog2
+
+# IntelliCode
+.vscode/
+
+# Note:
+# Remove the .vscode/ rule above if you want to commit
+# VS Code settings such as tasks.json or launch.json.
+
+
+# ============================================================
+# CMake / Visual Studio generated projects
+# ============================================================
+
+*.vcxproj.user
+*.vcxproj.filters.user
+*.sln.docstates
+
+
+# ============================================================
+# Ninja
+# ============================================================
+
+.ninja_deps
+.ninja_log
+
+
+# ============================================================
+# Make
+# ============================================================
+
+*.d
+*.dep
+
+
+# ============================================================
 # vcpkg
+# ============================================================
+
 vcpkg_installed/
 
-# debug information files
-*.dwo
 
-# test output & cache
+# ============================================================
+# Conan
+# ============================================================
+
+.conan/
+conanbuild.*
+conaninfo.*
+conanmanifest.txt
+graph_info.json
+
+
+# ============================================================
+# Package managers / dependencies
+# ============================================================
+
+# Generic dependency/build directories
+vendor/
+third_party/build/
+
+# Node.js (if used by tooling)
+node_modules/
+
+# Python tooling (if used by scripts/tools)
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+
+# ============================================================
+# Testing / Coverage
+# ============================================================
+
 Testing/
+CTestTestfile.cmake
+coverage/
+.coverage
+htmlcov/
+
+
+# ============================================================
+# Documentation generated output
+# ============================================================
+
+docs/_build/
+site/
+
+
+# ============================================================
+# Crash reports
+# ============================================================
+
+*.crash
+*.ips
+crash_report/
+
+
+# ============================================================
+# macOS developer files
+# ============================================================
+
+DerivedData/
+*.xcuserstate
+*.moved-aside
+
+
+# ============================================================
+# Credentials / local configuration
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+
+# Local configuration files
+*.local
+config.local.*
+
+
+# ============================================================
+# Generated files
+# ============================================================
+
+generated/
+Generated/
+generated-*/
+
+
+# ============================================================
+# Archives
+# ============================================================
+
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+
+# ============================================================
+# IDE metadata
+# ============================================================
+
+.idea/
+*.iml
+
+# Rider
+.idea/
+
+# CLion
+cmake-build-*/
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+.qtc_clangd/
+
+
+# ============================================================
+# Miscellaneous
+# ============================================================
+
 .cache/
+*.cache
+*.pid
+*.seed
+*.lock
